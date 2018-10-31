@@ -2498,20 +2498,44 @@ namespace PartitionEscrime.Droid
 			// aapt resource value: 0x7f080032
 			public const int ALT = 2131230770;
 			
+			// aapt resource value: 0x7f0800c1
+			public const int BottomLine = 2131230913;
+			
 			// aapt resource value: 0x7f080033
 			public const int CTRL = 2131230771;
+			
+			// aapt resource value: 0x7f0800c0
+			public const int CenterLine = 2131230912;
 			
 			// aapt resource value: 0x7f080034
 			public const int FUNCTION = 2131230772;
 			
+			// aapt resource value: 0x7f0800bf
+			public const int GesteA = 2131230911;
+			
+			// aapt resource value: 0x7f0800c2
+			public const int GesteB = 2131230914;
+			
+			// aapt resource value: 0x7f0800be
+			public const int LeftLine = 2131230910;
+			
 			// aapt resource value: 0x7f080035
 			public const int META = 2131230773;
+			
+			// aapt resource value: 0x7f0800c3
+			public const int RightLine = 2131230915;
 			
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
 			
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
+			
+			// aapt resource value: 0x7f080098
+			public const int ToPartition = 2131230872;
+			
+			// aapt resource value: 0x7f0800bd
+			public const int UpperLine = 2131230909;
 			
 			// aapt resource value: 0x7f0800aa
 			public const int action0 = 2131230890;
@@ -2774,14 +2798,14 @@ namespace PartitionEscrime.Droid
 			// aapt resource value: 0x7f08006e
 			public const int list_item = 2131230830;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int masked = 2131230908;
+			// aapt resource value: 0x7f0800c6
+			public const int masked = 2131230918;
 			
 			// aapt resource value: 0x7f0800ad
 			public const int media_actions = 2131230893;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int message = 2131230906;
+			// aapt resource value: 0x7f0800c4
+			public const int message = 2131230916;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2827,6 +2851,9 @@ namespace PartitionEscrime.Droid
 			
 			// aapt resource value: 0x7f08000b
 			public const int parent_matrix = 2131230731;
+			
+			// aapt resource value: 0x7f0800bb
+			public const int partition = 2131230907;
 			
 			// aapt resource value: 0x7f080059
 			public const int percent = 2131230809;
@@ -2978,8 +3005,11 @@ namespace PartitionEscrime.Droid
 			// aapt resource value: 0x7f080019
 			public const int tag_transition_group = 2131230745;
 			
-			// aapt resource value: 0x7f080098
-			public const int test = 2131230872;
+			// aapt resource value: 0x7f0800ba
+			public const int test = 2131230906;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int test2 = 2131230908;
 			
 			// aapt resource value: 0x7f08001a
 			public const int text = 2131230746;
@@ -3050,8 +3080,8 @@ namespace PartitionEscrime.Droid
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int visible = 2131230907;
+			// aapt resource value: 0x7f0800c5
+			public const int visible = 2131230917;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3287,19 +3317,25 @@ namespace PartitionEscrime.Droid
 			public const int notification_template_part_time = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int select_dialog_item_material = 2130968632;
+			public const int partition_display = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_multichoice_material = 2130968633;
+			public const int passe_view_holder = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_singlechoice_material = 2130968634;
+			public const int select_dialog_item_material = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int support_simple_spinner_dropdown_item = 2130968635;
+			public const int select_dialog_multichoice_material = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int tooltip = 2130968636;
+			public const int select_dialog_singlechoice_material = 2130968636;
+			
+			// aapt resource value: 0x7f04003d
+			public const int support_simple_spinner_dropdown_item = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int tooltip = 2130968638;
 			
 			static Layout()
 			{
