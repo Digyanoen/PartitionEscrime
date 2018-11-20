@@ -13,8 +13,18 @@ namespace PartitionEscrime.Droid.ViewHolder
 
         public PasseViewHolder(View itemView) : base(itemView)
         {
+            ItemView = itemView;
             A = itemView.FindViewById<TextView>(Resource.Id.GesteA);
             B = itemView.FindViewById<TextView>(Resource.Id.GesteB);
+
+            itemView.Click += ItemView_Click;
+        }
+
+        public event EventHandler ItemClick;
+
+        private void ItemView_Click(object sender, EventArgs e)
+        {
+            ItemClick?.Invoke(this, e);
         }
     }
 }

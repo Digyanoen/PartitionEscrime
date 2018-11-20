@@ -6,29 +6,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
   <TextView
-    android:id="@+id/test"
+    android:id="@+id/A"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="test"
+    android:text="A"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"/>
-  
+    app:layout_constraintLeft_toLeftOf="@+id/partition"
+    app:layout_constraintRight_toLeftOf="@+id/separator"/>
+  <TextView
+    android:id="@+id/B"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="B"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/separator"
+    app:layout_constraintRight_toRightOf="@+id/partition"/>
+
+  <View android:id="@+id/separator"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/A"
+        app:layout_constraintRight_toLeftOf="@+id/B"/>
+
   <android.support.v7.widget.RecyclerView
     android:id="@+id/partition"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    app:layout_constraintTop_toBottomOf="@+id/test"
+    app:layout_constraintTop_toBottomOf="@+id/A"
     app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintBottom_toTopOf="@+id/test2"/>
-  
-  <TextView
-    android:id="@+id/test2"
+    app:layout_constraintRight_toLeftOf="@+id/add_button"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+  <Button
+    android:id="@+id/add_button"
+    android:text="Add"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="test2"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+  <Button
+    android:id="@+id/insert_button"
+    android:text="Insert"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@+id/add_button"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+  <Button
+    android:id="@+id/remove_button"
+    android:text="Del"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@+id/insert_button"
     app:layout_constraintRight_toRightOf="parent"/>
 </android.support.constraint.ConstraintLayout>

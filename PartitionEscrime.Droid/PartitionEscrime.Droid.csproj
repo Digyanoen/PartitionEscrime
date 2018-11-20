@@ -59,6 +59,8 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\PartitionDisplayActivity.cs" />
     <Compile Include="Adapters\PartitionAdapter.cs" />
+    <Compile Include="Fragments\DeletePasseFragment.cs" />
+    <Compile Include="Fragments\AddPasseFragment.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewHolder\PasseViewHolder.cs" />
@@ -116,6 +118,20 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\passe_view_holder.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\add_alert_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\delete_alert_layout.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
